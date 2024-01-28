@@ -61,7 +61,7 @@ def get_metadata(wallets,token_id_input,address):
     image = data['image']
     attributes = data['attributes']
     if attributes[7]['value'] == "Yes":
-        r1 = {'адресс':address,
+        r1 = {'адрес':address,
               'последее обновление метадаты':lastsync,
               'image': image}
         r2 = {attributes[i]['trait_type']: attributes[i]['value'] for i in range(0,10)}
